@@ -4,9 +4,13 @@ import (
 	"math"
 	"strconv"
 	"strings"
+	"time"
 )
 
 func day1part1(inputData string) int {
+
+	defer timer(time.Now(), "day1part1")
+
 	var countZero int
 	position := 50
 	rotations := strings.Fields(inputData)
@@ -32,6 +36,9 @@ func day1part1(inputData string) int {
 }
 
 func day1part2(inputData string) int {
+
+	defer timer(time.Now(), "day1part1")
+
 	var countZero int
 	position := 50
 	rotations := strings.Fields(inputData)

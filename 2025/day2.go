@@ -3,9 +3,13 @@ package main
 import (
 	"strconv"
 	"strings"
+	"time"
 )
 
 func day2part1(inputData string) int {
+
+	defer timer(time.Now(), "day1part1")
+
 	data := strings.Split(strings.TrimSpace(inputData), ",")
 	var sumInvalid int
 
@@ -34,6 +38,9 @@ func day2part1(inputData string) int {
 }
 
 func day2part2(inputData string) int {
+
+	defer timer(time.Now(), "day1part1")
+
 	data := strings.Split(strings.TrimSpace(inputData), ",")
 	var sumInvalid int
 
