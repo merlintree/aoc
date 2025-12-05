@@ -1,13 +1,14 @@
 package main
 
 import (
+	"fmt"
 	"math"
 	"strconv"
 	"strings"
 	"time"
 )
 
-func day1part1(inputData string) int {
+func day1part1(inputData string) {
 
 	defer timer(time.Now(), "day1part1")
 
@@ -32,10 +33,10 @@ func day1part1(inputData string) int {
 			countZero++
 		}
 	}
-	return countZero
+	fmt.Println(countZero)
 }
 
-func day1part2(inputData string) int {
+func day1part2(inputData string) {
 
 	defer timer(time.Now(), "day1part2")
 
@@ -77,5 +78,5 @@ func day1part2(inputData string) int {
 			countZero++
 		}
 	}
-	return countZero
+	fmt.Println(countZero)
 }

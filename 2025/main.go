@@ -74,7 +74,7 @@ func main() {
 	inputDir := "inputs"
 	var data []string
 
-	for day := 1; day <= 3; day++ {
+	for day := 1; day <= 5; day++ {
 
 		inputFile := filepath.Join(inputDir, fmt.Sprintf("day%d.txt", day))
 
@@ -87,10 +87,28 @@ func main() {
 		data = append(data, inputData)
 	}
 
-	fmt.Println(day1part1(data[0]))
-	fmt.Println(day1part2(data[0]))
-	fmt.Println(day2part1(data[1]))
-	fmt.Println(day2part2(data[1]))
-	fmt.Println(day3part1(data[2]))
-	fmt.Println(day3part2(data[2]))
+	day1part1(data[0])
+	day1part2(data[0])
+	day2part1(data[1])
+	day2part2(data[1])
+	day3part1(data[2])
+	day3part2(data[2])
+	day4part1(data[3])
+	day4part2(data[3])
+	//day5part1(data[4])
+	//day5part2(data[4])
+	//day6part1(data[5])
+	//day6part2(data[5])
+	//day7part1(data[6])
+	//day7part2(data[6])
+	//day8part1(data[7])
+	//day8part2(data[7])
+	//day9part1(data[8])
+	//day9part2(data[8])
+	//day10part1(data[9])
+	//day10part2(data[9])
+	//day11part1(data[10])
+	//day11part2(data[10])
+	//day12part1(data[11])
+	//day12part2(data[11])
 }

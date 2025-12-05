@@ -1,13 +1,14 @@
 package main
 
 import (
+	"fmt"
 	"math"
 	"strconv"
 	"strings"
 	"time"
 )
 
-func day3part1(inputData string) int {
+func day3part1(inputData string) {
 
 	defer timer(time.Now(), "day3part1")
 
@@ -32,10 +33,10 @@ func day3part1(inputData string) int {
 		}
 		totalJoltage += maxJoltage
 	}
-	return totalJoltage
+	fmt.Println(totalJoltage)
 }
 
-func day3part2(inputData string) int {
+func day3part2(inputData string) {
 
 	defer timer(time.Now(), "day3part2")
 
@@ -97,5 +98,5 @@ func day3part2(inputData string) int {
 		}
 		totalJoltage += joltage
 	}
-	return totalJoltage
+	fmt.Println(totalJoltage)
 }
